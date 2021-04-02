@@ -1688,7 +1688,7 @@ def silence_event_loop_closed(func):
 _ProactorBasePipeTransport.__del__ = silence_event_loop_closed(_ProactorBasePipeTransport.__del__)
 
 try:
-    client.run(token, bot=not is_selfbot)
+    client.run()
 # except discord.LoginFailure:
 #     print('Invalid token is being used.')
 #     exit()
